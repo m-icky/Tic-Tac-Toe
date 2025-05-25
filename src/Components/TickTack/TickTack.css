@@ -1,0 +1,141 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    margin: 15px 0;
+    animation: rainbow 10s ease infinite;
+}
+
+.reset, .start {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbow 10s ease infinite;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.reset:hov, .starter {
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 10s ease infinite;
+}
+
+.boxes {
+    display: flex;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+    background: black;
+    border: 1px solid #ffc226;
+    border-radius: 10px;
+}
+
+.boxes:hover {
+    background: #ffc226;
+    border: 1px solid #ffc226;
+}
+
+.boxes.hovered:hover {
+    border: 1px solid #26ffcb;
+    background: #26ffcb;
+}
+
+.boxes.hovered {
+    border: 1px solid #26ffcb;
+}
+
+.board {
+    /* height: 600px; */
+    width: 500px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 40px 0;
+    gap: 10px;
+}
+
+.row1,
+.row2,
+.row3 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.tack-img {
+    width: 100%;
+    padding: 40px;
+}
+
+.boxes.highlight {
+    border-image: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    border-image-slice: 1;
+}
+
+.x-border {
+    border: 1px solid #ffc226;
+}
+
+.o-border {
+    border: 1px solid #26ffcb;
+}
+
+.p-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.p-dialog .p-dialog-content {
+    background: black;
+    color: white;
+}
+
+.p-dialog-draggable .p-dialog-header {
+    background: black;
+    color: white;
+}
+
+.user-dialog {
+    border: 1px solid gainsboro;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+button.start.p-button.p-component.p-disabled {
+    cursor: not-allowed;
+}
