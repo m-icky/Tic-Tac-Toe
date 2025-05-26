@@ -26,6 +26,4 @@ A fun and interactive Tic Tac Toe game built using **React**, **PrimeReact**, **
 ## 📦 Installation
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/m-icky/Tic-Tac-Toe.git
