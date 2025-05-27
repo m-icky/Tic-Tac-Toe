@@ -139,3 +139,28 @@
 button.start.p-button.p-component.p-disabled {
     cursor: not-allowed;
 }
+
+span.title {
+    font-size: 30px;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.user-one,
+.user-two {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 1400% 1400%;
+    animation: rainbow 10s ease infinite;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
