@@ -1,47 +1,49 @@
-Tic-Tac-Toe
+🎮 Tic-Tac-Toe
+A simple and modern 2-player Tic-Tac-Toe game built with React + Vite
 
-Live demo: https://m-icky.github.io/Tic-Tac-Toe/
+Live Demo: https://m-icky.github.io/Tic-Tac-Toe/
 
-A lightweight, browser-based two-player Tic-Tac-Toe game built with React, Vite, and reactbits. Play locally in the browser with a friend — no backend required.
+A lightweight, browser-based two-player Tic-Tac-Toe game built using React, Vite, and reactbits. Designed for quick, local gameplay with a clean and responsive UI — no backend required.
 
-Features
+✨ Features
 
-Two-player mode (local)
+🎲 Two-player local mode
 
-Clean and responsive UI
+📱 Responsive and minimal UI
 
-Win and draw detection
+🏆 Win and draw detection
 
-Game restart functionality
+🔁 Restart / New Game button
 
-Modern frontend tooling (React + Vite)
+⚡ Fast performance with Vite
 
-Tech Stack
+🧩 Built with modern React components
 
-React – UI framework
+🛠 Tech Stack
+Technology	Purpose
+React	UI framework
+Vite	Dev server + build tool
+reactbits	Utility components & hooks
+CSS	Styling
+🚀 Live Demo
 
-Vite – Modern dev environment and build tool
+Click below to play instantly:
 
-reactbits – Utility UI components and helpers
-
-CSS for styling
-
-Demo
 https://m-icky.github.io/Tic-Tac-Toe/
 
-Run Locally
-1. Clone the repository
+💻 Run Locally
+1️⃣ Clone the repository
 git clone https://github.com/m-icky/Tic-Tac-Toe.git
 cd Tic-Tac-Toe
 
-2. Install dependencies
+2️⃣ Install dependencies
 npm install
 # or
 yarn
 # or
 pnpm install
 
-3. Start the development server
+3️⃣ Start the development server
 npm run dev
 # or
 yarn dev
@@ -49,9 +51,11 @@ yarn dev
 pnpm dev
 
 
-Open the URL that Vite prints in your terminal (typically http://localhost:5173).
+Now open the URL printed in the terminal, usually:
 
-Build for Production
+http://localhost:5173
+
+📦 Build for Production
 npm run build
 # or
 yarn build
@@ -59,28 +63,30 @@ yarn build
 pnpm build
 
 
-Build output will be located in the dist/ folder.
+Production files will be inside the dist/ folder.
 
-Deployment (GitHub Pages)
+🌐 Deployment (GitHub Pages)
 
-To deploy, ensure you set the correct base path in vite.config.js:
+Ensure your vite.config.js contains the correct base URL:
 
 export default defineConfig({
   base: '/Tic-Tac-Toe/',
   plugins: [react()],
-})
+});
 
 
-Push your dist/ output to the gh-pages branch or use GitHub Pages settings.
+Deploy either by:
 
-How to Play
+Pushing dist/ to the gh-pages branch
 
-Player 1 uses X, Player 2 uses O.
+Or enabling GitHub Pages from repository settings
 
-Players alternate selecting available cells.
+🎯 **How to Play**
 
-First player to align three symbols (row, column, diagonal) wins.
+Player 1 is X, Player 2 is O
 
-If the grid fills without a winner, the game ends in a draw.
+Players take turns clicking an empty cell
 
-Use Restart to begin a new round at any time.
+First player to align three symbols (row, column, diagonal) wins
+
+If all cells are filled → Draw
